@@ -1,0 +1,133 @@
+body {
+  background-color: rgb(139, 205, 226);
+}
+h1 {
+  color: yellow;
+  text-align: center;
+}
+p {
+  color: red;
+  font-family: Verdana;
+  text-align: center;
+  font-size: 20px;
+}
+#test1 {
+  text-align: center;
+  color: green;
+  opacity: 0.4;
+}
+p.jeden {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.dwa {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.trzy {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+p.cztery {
+  border-style: dotted;
+  border-width: thick;
+}
+
+p.piec {
+  border-style: double;
+  border-width: 15px;
+}
+
+p.szesc {
+  border-style: double;
+  border-width: thick;
+}
+div.z1 {
+  width: 300px;
+  background-color: yellow;
+}
+
+div.z2 {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: rgb(15, 75, 94);
+}
+h1 {
+  text-decoration-line: overline;
+}
+
+h2 {
+  text-decoration-line: line-through;
+}
+
+h3 {
+  text-decoration-line: underline;
+}
+
+p {
+  text-decoration-line: overline underline;
+}
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+p {
+  font-family: Tahoma, Verdana, sans-serif;
+}
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+p.normal {
+  font-variant: normal;
+}
+
+p.small {
+  font-variant: small-caps;
+}
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+}
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 0.875em;
+}
+body {
+  font-family: "Sofia", sans-serif;
+}
