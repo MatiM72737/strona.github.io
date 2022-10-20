@@ -3,26 +3,22 @@
   <head>
     <title>Architect</title>
     <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <div class="main-flex-div">
       <header>
         <div class="left-header">
           <span class="custom-margin">Architect</span>
-          <img
-            class="margins margins-btn"
-            src="images/3-line.png"
-            alt="3-lines"
-            width="25"
-            height="25"
-          />
-          <img
-            class="margins"
-            src="images/search.png"
-            alt="search"
-            width="25"
-            height="25"
-          />
+          <button class="asideMenuBtn" onclick="menuAside()">
+            <i class="fa fa-bars margins margins-btn" aria-hidden="true"></i>
+          </button>
+          <i class="fa fa-search" aria-hidden="true"></i>
           <span class="margins">Mega Menu▼</span>
           <span class="margins">Settings▼</span>
           <span class="margins">Projects▼</span>
@@ -86,13 +82,7 @@
             </div>
           </div>
           <div class="rthird">
-            <img
-              class="margins"
-              src="images/3-line.png"
-              alt="3-line"
-              width="25"
-              height="25"
-            />
+            <i class="fa fa-bars margins" aria-hidden="true"></i>
           </div>
         </div>
       </header>
@@ -155,7 +145,9 @@
         <div class="right-bottom-flex">
           <nav>
             <div class="nav-left">
-              <img src="images/car.png" alt="car" width="50px" height="50px" />
+              <div class="car-backround">
+                <i class="fa fa-car center" aria-hidden="true"></i>
+              </div>
               <div class="nav-col">
                 <span class="nav-text-up">Analystics Dashboard</span>
                 <span class="nav-text-down">
@@ -165,12 +157,9 @@
               </div>
             </div>
             <div class="nav-right">
-              <img
-                class="right-nav-star-class"
-                src="images/star.png"
-                width="30px"
-                height="30px"
-              />
+              <div class="nav-right-star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
               <button>Buttons ▼</button>
             </div>
           </nav>
@@ -193,31 +182,49 @@
                 </div>
                 <div class="s-first-under-nav-label2">
                   <div class="s-first-under-nav-label2-el">
-                    <img src="images/computer.png" width="50px" height="50px" />
+                    <div class="computer-backround">
+                      <i class="fa fa-desktop center" aria-hidden="true"></i>
+                    </div>
                     <div class="s-first-under-nav-label2-col">
-                      <span>Cash Deposits</span>
-                      <span>1,7M</span>
-                      <span>▼ 54.1% less earnings</span>
+                      <span class="smaller-font">Cash Deposits</span>
+                      <span class="portfolio-left-middle">1,7M</span>
+                      <span class="smaller-font">
+                        <span class="portfolio-left-bottom-red">▼ 54.1%</span>
+                        less earnings</span
+                      >
                     </div>
                   </div>
                   <div class="s-first-under-nav-label2-el">
-                    <img
-                      src="images/student_hat.png"
-                      width="50px"
-                      height="50px"
-                    />
+                    <div class="backround-hat">
+                      <i
+                        class="fa fa-graduation-cap center"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
                     <div class="s-first-under-nav-label2-col">
-                      <span>Invested Dividents</span>
-                      <span>9M</span>
-                      <span>Grow Rate ▼ 14.1%</span>
+                      <span class="smaller-font">Invested Dividents</span>
+                      <span class="portfolio-center-middle">9M</span>
+                      <span class="smaller-font"
+                        >Grow Rate
+                        <span class="portfolio-center-bottom-blue"
+                          >▼ 14.1%</span
+                        ></span
+                      >
                     </div>
                   </div>
                   <div class="s-first-under-nav-label2-el">
-                    <img src="images/bank.png" width="50px" height="50px" />
+                    <div class="bank-backround">
+                      <i class="fa fa-university center" aria-hidden="true"></i>
+                    </div>
                     <div class="s-first-under-nav-label2-col">
-                      <span>Capital Gains</span>
-                      <span>$563</span>
-                      <span>Increased by ⯅ 7.35%</span>
+                      <span class="smaller-font">Capital Gains</span>
+                      <span class="portfolio-right-middle">$563</span>
+                      <span class="smaller-font"
+                        >Increased by
+                        <span class="portfolio-right-bottom-yellow"
+                          >⯅ 7.35%</span
+                        ></span
+                      >
                     </div>
                   </div>
                 </div>
@@ -230,19 +237,19 @@
             <div class="under-nav-flex">
               <div class="lowest-under-nav">
                 <div class="lowest-left-under-nav">
-                  <img
-                    class="lowest-left-under-nav-img"
-                    src="images/left-lowest.png"
-                  />
+                  <div class="lowest-right-under-nav-1">
+                    <div class="lowest-right-under-nav-1-left">
+                      <input type="text" name="item" class="item" />
+                    </div>
+                  </div>
+                  <div class="lowest-left-under-nav-2">
+                    <table class="tr"></table>
+                  </div>
                 </div>
                 <div class="lowest-right-under-nav">
                   <div class="lowest-right-under-nav-1">
                     <div class="lowest-right-under-nav-1-left">
-                      <img
-                        src="images/lighter.png"
-                        width="35px"
-                        height="35px"
-                      />
+                      <i class="fa fa-fire" aria-hidden="true"></i>
                       <span>Timeline Example</span>
                     </div>
                     <img
