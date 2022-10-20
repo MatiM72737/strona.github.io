@@ -15,6 +15,9 @@ header {
 body {
   background-color: rgb(234, 237, 239);
   color: rgb(70, 69, 75);
+  height: 100vh;
+  max-height: 100%;
+  overflow: hidden;
 }
 nav {
   display: flex;
@@ -31,6 +34,7 @@ aside {
   padding-right: 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: large;
+  transition: 0.5s ease-in-out;
 }
 aside ul {
   flex: 1;
@@ -278,6 +282,8 @@ nav {
   border-bottom: solid 1px rgb(222, 226, 230);
   display: flex;
   width: 100%;
+  max-height: 450px;
+  overflow: hidden auto;
 }
 .lowest-right-under-nav-2 {
   border-top: solid 1px rgb(222, 226, 230);
@@ -409,7 +415,13 @@ button {
   padding-left: 5px;
 }
 .asideNotVisible {
-  display: none;
+  /*transform: translate(-230px);*/
+  transform: translateX(-230px);
+  opacity: 0;
+  width: 0px;
+  transition: 0.5s ease-in-out;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 tr:nth-child(odd) {
   background: white;
