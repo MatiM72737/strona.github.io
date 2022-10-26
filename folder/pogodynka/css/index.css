@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+body {
+  background: url(../img/background.png) no-repeat center bottom/cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+}
+.center {
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 500px;
+  height: 800px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+#mainImage {
+  width: 100px;
+  height: 100px;
+}
+
+#mainWeatherLabel {
+  text-align: center;
+  box-shadow: 3px;
+  font-size: xx-large;
+}
+#tempWeatherLabel {
+  text-align: center;
+  box-shadow: 3px;
+}
+.fontXD {
+  font-size: xx-large;
+}
